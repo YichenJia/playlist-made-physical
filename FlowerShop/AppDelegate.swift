@@ -7,6 +7,8 @@
 //
 
 import UIKit
+//Lynda Tutorial I: to double check if ARKit is avaliable
+import ARKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Lynda Tutorial I: double check if ARKit is avaliable
+        guard ARWorldTrackingConfiguration.isSupported else {
+            fatalError("ARKit is not avaliable")
+        }
         return true
     }
 

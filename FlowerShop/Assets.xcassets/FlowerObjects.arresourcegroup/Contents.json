@@ -5,6 +5,9 @@
   },
   "resources" : [
     {
+      "filename" : "aveeno.arobject"
+    },
+    {
       "filename" : "MyPot.arobject"
     }
   ]
